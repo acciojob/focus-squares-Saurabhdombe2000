@@ -8,19 +8,22 @@ const coffee = "#6F4E37";
 
 // Loop through each square
 squares.forEach((sq) => {
-  // When mouse enters one square
-  sq.addEventListener("mouseover", () => {
-    squares.forEach((otherSq) => {
-      if (otherSq !== sq) {
-        otherSq.style.backgroundColor = coffee;
-      }
-    });
-  });
+	// when mouse enter one square
+	sq.addEventListener("mouseover", () => {
+		squares.forEach((otherSq) => {
+			if (otherSq !== sq) {
+				otherSq.style.backgroundColor = coffee;
+			}
+		});
+	});
 
-  // When mouse leaves that square
-  sq.addEventListener("mouseout", () => {
-    squares.forEach((s) => {
-      s.style.backgroundColor = lavender;
-    });
-  });
+	// When mouse leaves that square
+	sq.addEventListner("mouseout" () => {
+		squares.forEach((s) => {
+			s.style.backgroundColor = lavender;
+		});
+	});
 });
+
+  
+  
