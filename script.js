@@ -18,11 +18,11 @@ squares.forEach((sq) => {
 	});
 
 	// When mouse leaves that square
-	sq.addEventListner("mouseout" () => {
+	sq.addEventListener("mouseout", () => {
 		squares.forEach((s) => {
 			s.style.backgroundColor = lavender;
 		});
-	});
+	})
 });
 
   
